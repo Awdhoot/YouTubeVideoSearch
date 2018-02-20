@@ -1,3 +1,6 @@
-/**
- * Created by synerzip on 20/2/18.
- */
+import React from 'react';
+
+export const SearchBar = () => {
+  return (<input/>)
+};
+
