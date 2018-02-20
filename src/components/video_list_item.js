@@ -1,3 +1,7 @@
-/**
- * Created by synerzip on 20/2/18.
- */
+import  React from 'react';
+
+const VideoListItem = (props) => {
+  return (<li>video</li>);
+};
+
+export default VideoListItem;
