@@ -1,3 +1,7 @@
-/**
- * Created by synerzip on 20/2/18.
- */
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+
+const App = () => <div>HELLO</div>;
+
+ReactDOM.render(<App />, document.querySelector('.container'));
