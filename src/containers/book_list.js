@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {selectBook} from '../actions/index';
+import {selectBook} from '../actions/index'; // callback action that will update all reducers
 import {bindActionCreators} from 'redux'; // makes sure that the action returned by action creator flows through all the reducers triggering state change
 
 
@@ -22,7 +22,7 @@ class BooksList extends Component {
   }
 }
 
-
+// anything returned from this function will end up as props to book list container
 function mapStateToProps(state) {
   // when application state changes, this BookList container will re render
   // returned data will show as props inside booklist
@@ -31,7 +31,7 @@ function mapStateToProps(state) {
   }
 }
 
-// anything returned from this function will end up as props to book list container
+// function to map action to reducers
 function mapDispatchToProps(dispatch) {
   // whenever selectBook is called, result should be passed in all of the reducers
   return bindActionCreators({selectBook: selectBook}, dispatch);

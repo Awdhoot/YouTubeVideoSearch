@@ -10,7 +10,8 @@ class BookDetil extends Component {
     }
     return (
       <div>
-        Book Detail {this.props.book.title}
+        <div>Title - {this.props.book.title}</div>
+        <div>Pages - {this.props.book.pages}</div>
       </div>
     );
   }
